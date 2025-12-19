@@ -1,3 +1,7 @@
+options:
+  # Only needed if you *also* want to set these explicitly
+  # serviceAccount: projects/metal-direction-479817-c5/serviceAccounts/metal-direction-479817-c5@appspot.gserviceaccount.com
+  logging: CLOUD_LOGGING_ONLY
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build','-t','europe-west1-docker.pkg.dev/metal-direction-479817-c5/testrepo/pyappimage:latest','.']
